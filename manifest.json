@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Better Cinema Mode for YouTube™",
   "version": "1.1.0",
-  "description": "Masque la barre de navigation YouTube en mode cinéma, avec un bouton dans le lecteur pour l'afficher ou la masquer.",
+  "description": "Masquez la barre de navigation YouTube en mode cinéma et réaffichez-la d'un clic grâce à un bouton intégré au lecteur.",
   "permissions": [
     "storage"
   ],
