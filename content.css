@@ -1,0 +1,24 @@
+/* Navbar masquée : uniquement quand l'extension pose la classe (mode cinéma). */
+html.bcm-hide-nav:not(.bcm-peek) #masthead-container { display: none !important; }
+html.bcm-hide-nav ytd-app {
+  --ytd-masthead-height: 0px !important;
+  --ytd-watch-flexy-masthead-height: 0px !important;
+}
+html.bcm-hide-nav ytd-page-manager { margin-top: 0 !important; }
+
+/* Le lecteur exploite la place libérée par la navbar
+   (YouTube le plafonne sinon à environ 100vh - 169px). */
+html.bcm-hide-nav ytd-watch-flexy[theater] {
+  --ytd-watch-flexy-masthead-height: 0px !important;
+  --ytd-watch-flexy-max-player-height: 100vh !important;
+}
+html.bcm-hide-nav ytd-watch-flexy[theater] #full-bleed-container { max-height: 100vh !important; }
+
+/* Recherche « / » : la barre apparaît par-dessus la vidéo, sans décaler la page. */
+html.bcm-hide-nav.bcm-peek #masthead-container { box-shadow: 0 2px 16px rgba(0, 0, 0, .5); }
+
+/* Icône du bouton (la mise en page vient de .ytp-button, native). */
+.bcm-btn .bcm-frame { fill: none; stroke: #fff; stroke-width: 2; }
+.bcm-btn .bcm-bar { fill: #fff; stroke: #fff; stroke-width: 1.2; transition: fill .15s; }
+/* Navbar masquée : la barre de titre devient un contour en pointillés. */
+.bcm-btn[data-hidden="true"] .bcm-bar { fill: none; stroke-width: 1.5; stroke-dasharray: 2.2 1.8; }

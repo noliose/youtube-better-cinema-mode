@@ -1,0 +1,4 @@
+# Archives générées pour le Chrome Web Store
+dist/
+*.zip
+.DS_Store
