@@ -1,4 +1,4 @@
-# Better Cinema Mode (YouTube)
+# Better Cinema Mode for YouTube™
 
 Extension Chrome (Manifest V3) qui masque la barre de navigation de YouTube en mode cinéma,
 avec un bouton dans le lecteur pour l'afficher ou la masquer.
