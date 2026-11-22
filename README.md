@@ -7,6 +7,8 @@ avec un bouton dans le lecteur pour l'afficher ou la masquer.
 - Choix mémorisé et synchronisé entre onglets ; navbar normale hors mode cinéma, en plein écran, sur l'accueil, en mini-lecteur.
 - Lecteur agrandi à toute la hauteur ; « / » affiche la barre le temps d'une recherche, Échap la referme.
 
+Règles de confidentialité : [PRIVACY.md](PRIVACY.md) — aucune donnée collectée.
+
 ## Tester en local
 
 1. `chrome://extensions` → activer le mode développeur.
